@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Managment System</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/CURD.css">
+</head>
+
+<body>
+    <h1 class=" store text-center py-1 mt-5 ">Smart Tech Store</h1>
+    <div class="w-75 mx-auto py-5">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="product-name" placeholder="name@example.com">
+            <label for="product-name">Prodcut Name :</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="product-price" placeholder="name@example.com">
+            <label for="product-price">Prodcut Price :</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" list="cate" class="form-control" id="product-category" placeholder="name@example.com">
+            <label for="product-category">Prodcut Category :</label>
+
+            <datalist id="cate">
+                <option value="TV"></option>
+                <option value="Mobile"></option>
+                <option value="Labtop"></option>
+                <option value="Elctronic device"></option>
+                <option value="Watch"></option>
+                <option value="other"></option>
+
+            </datalist>
+        </div>
+
+        <div class="form-floating mb-3">
+            <textarea type="text" class="form-control" id="product-Discription"
+                placeholder="name@example.com"></textarea>
+            <label for="product-discription">product-Discription</label>
+        </div>
+
+        <h5 class="mt-4">Choose Product Image</h5>
+
+<div class="row g-3" id="imagePicker">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-joshsorenson-1334597.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-thorsten-nees-1296456-2473167.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-format-380633-1029757.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="C:\Users\d\Documents\university project\Store Mangment System\CRUD img\pexels-morningtrain-18105.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\jonathan-talbert-VtIQwaUn-GE-unsplash.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\andrew-hutchings-W2Dta_Yiwfw-unsplash.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-shottrotter-1309766.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-pixabay-265631.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-rohit-sharma-1230131-20074768.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-rohit-sharma-1230131-21424626.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="C:\Users\d\Documents\university project\Store Mangment System\CRUD img\pexels-rohit-sharma-1230131-30277524.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <img src="CRUD img\pexels-rohit-sharma-1230131-27173298.jpg" onclick="selectImage(this)" class="img-fluid img-choice">
+  </div>
+  
+</div>
+
+        <button id="addBtn" class="btn btn-info" onclick="addProduct()">Add Product</button>
+<button onclick="updateProduct()" id="updateBtn" class="btn btn-success d-none">Update Product</button>
+    </div>
+
+    <input id="searchInput" type="text" class="form-control w-50 mx-auto " oninput="searchProduct()"
+        placeholder="Search By Prodcut Name.....">
+    <div class="container py-5">
+        <div id="rowData" class="row">
+        </div>
+    </div>
+
+
+
+    <script src="JS/CURD.js"></script>
+</body>
+
+</html>

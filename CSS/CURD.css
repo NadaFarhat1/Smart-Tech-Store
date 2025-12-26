@@ -1,0 +1,39 @@
+body{
+    background-image: url(../Blue\ and\ Purple\ Watercolor\ Welcome\ Card1.png);
+}
+
+.store{
+  background: linear-gradient(rgb(93, 78, 96),rgb(239, 206, 250));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 55px;
+
+}
+#addBtn{
+   background-color: rgb(201, 69, 113);
+   border: none;
+   color: aliceblue;
+   margin-top: 15px;
+}
+
+#updateBtn{
+    color: white;
+    background-color: rgb(169, 14, 169);
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem rgb(163, 144, 166);
+    border-color:white ;
+}
+
+.img-choice {
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.img-choice.selected {
+  border-color:#a7a7da ;
+  box-shadow: 0 0 10px #301524;
+}
